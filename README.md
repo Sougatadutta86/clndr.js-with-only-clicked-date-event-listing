@@ -34,7 +34,7 @@ clickEvents: {<br>
    </plaintext>
    </blockquote>
 </p>
-   
+
 <p>And nothing we need to change for showing the clicked date events. But if you need to show the monthly event then you don't need to do any changes on clndr.js</p>
 
 <p>And for modifying the date format you just need to add few lines in site.js:<br><br>
