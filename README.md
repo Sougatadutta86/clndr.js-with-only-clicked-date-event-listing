@@ -23,6 +23,7 @@ clickEvents: {<br>
    
 <p>Changes we have made in HTML template to get the result:<br><br>
    <blockquote>
+   <plaintext>
    <div class="events-list">
         {{ _.each(eventsThisMonth, function(event) { }}
            <div class="event eventday" id="event-{{=moment(event.date).format('YYYY-MM-DD')}}">
@@ -30,6 +31,7 @@ clickEvents: {<br>
            </div>
         {{ }); }}
    </div>
+   </plaintext>
    </blockquote>
 </p>
    
