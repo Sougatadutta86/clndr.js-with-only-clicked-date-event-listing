@@ -22,15 +22,15 @@ clickEvents: {<br>
 </p>
    
 <p>Changes we have made in HTML template to get the result:<br><br>
-   <plaintext>
-   <div class="events-list"><br>
-        {{ _.each(eventsThisMonth, function(event) { }}<br> 
-           <div class="event eventday" id="event-{{=moment(event.date).format('YYYY-MM-DD')}}"><br> 
-                <a href="{{= event.url }}">{{= moment(event.date).format('Do MMMM') }} - {{= event.title }}</a><br> 
-           </div><br> 
-        {{ }); }}<br>
-   </div><br>
-   </plaintext>
+   <blockquote>
+   <div class="events-list">
+        {{ _.each(eventsThisMonth, function(event) { }}
+           <div class="event eventday" id="event-{{=moment(event.date).format('YYYY-MM-DD')}}">
+                <a href="{{= event.url }}">{{= moment(event.date).format('Do MMMM') }} - {{= event.title }}</a>
+           </div>
+        {{ }); }}
+   </div>
+   </blockquote>
 </p>
    
 <p>And nothing we need to change for showing the clicked date events. But if you need to show the monthly event then you don't need to do any changes on clndr.js</p>
