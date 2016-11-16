@@ -22,7 +22,8 @@ clickEvents: {
  ```
    
 Changes we have made in HTML template to get the result:
-  
+
+```html
    <div class="events-list">
         {{ _.each(eventsThisMonth, function(event) { }}
            <div class="event eventday" id="event-{{=moment(event.date).format('YYYY-MM-DD')}}">
@@ -30,15 +31,14 @@ Changes we have made in HTML template to get the result:
            </div>
         {{ }); }}
    </div>
-   
-</p>
+```  
+And nothing we need to change for showing the clicked date events. But if you need to show the monthly event then you don't need to do any changes on clndr.js
 
-<p>And nothing we need to change for showing the clicked date events. But if you need to show the monthly event then you don't need to do any changes on clndr.js</p>
-
-<p>And for modifying the date format you just need to add few lines in site.js:<br><br>
-    $('#mini-clndr').clndr({<br>
-    template: $('#mini-clndr-template').html(),<br>
-	daysOfTheWeek: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'], // New added line for short days of the week<br> 
-    events: events,<br>
-</p>
+And for modifying the date format you just need to add few lines in site.js:
+```html
+    $('#mini-clndr').clndr({
+    template: $('#mini-clndr-template').html(),
+	daysOfTheWeek: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'], // New added line for short days of the week
+    events: events,
+```
    
