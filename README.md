@@ -11,8 +11,8 @@ clickEvents: {
                var daysContainer = $('#mini-clndr').find('.days-container');
                daysContainer.toggleClass('show-events', true);
                var selectedClass = target.date.format('YYYY-MM-DD');
-               $('.events-list .eventday').hide();<br>
-			   $('.events-list #event-' + selectedClass).show();
+               $('.events-list .eventday').hide();
+	       $('.events-list #event-' + selectedClass).show();
                $('#mini-clndr').find('.x-button').click(function () {
                    daysContainer.toggleClass('show-events', false);
                });
